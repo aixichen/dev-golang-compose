@@ -1,0 +1,12 @@
+version: "3"
+services :
+   golang:
+    build: ./golang
+    ports: 
+      - "9090:9090"
+    # stdin_open: true # -i interactive
+    # tty: true # -t tty
+    # privileged: true
+    # entrypoint: ["sh"] # 执行 sh
+    volumes:
+      - G:\go:/var/go
